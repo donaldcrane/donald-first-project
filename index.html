@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheObiOfLagos</title>
+    <link rel="stylesheet" href="crane.css">
+    <script src = './main.js'></script>
+</head>
+<body>
+    <div class = "main-wrapper">
+        <h2>Hi, Tell us about yourself. </h2>
+        
+
+        <form class = "main" action="#" method="POST" onsubmit="return Validation()">
+            <div id = "error"></div>
+        
+            <div class = "main-form">
+                <label for="firstname">Firstname</label>
+                <input type="text" id="firstname" placeholder="Enter Firstname">
+            </div>
+
+            <div class = "main-form">
+                <label for="lastname">Lastname</label>
+                <input type="text" id="lastname" placeholder="Enter Lastname">  
+            </div>
+
+            <div class = "main-form">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="obi@example.com">
+            </div>
+            
+            <div class = "main-form">
+                <label for="tweet">TwitterHandle</label>
+                <input type="text" id="tweet" value="@">
+            </div>
+
+            <div class = "main-form">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Password">
+            </div>
+
+            <div class = "main-form">
+                <label for="password2">Confirm password</label>
+                <input type="password" id="password2" placeholder="Enter password again">
+            </div>
+            
+            <div class = "main-form">
+                <h3>Select Gender</h3>
+                <label for ="male">  Male </label>
+                <input type= "radio" name = "Gender" value = "Male" id = "male"> 
+
+                <label for ="female">  Female </label>
+                <input type= "radio" name = "Gender" value = "Female" id = "female" >
+            </div>
+
+            <div class = "main-form">
+                <br/>
+                
+                <h3>Favorite Hobbies</h3> 
+                <label for ="soccer">  Football </label>              
+                <input type= "checkbox" name = "Sport" value = "Football " id="soccer"><br/>
+                
+
+                <label for ="basketball">  Basketball </label>
+                <input type= "checkbox" name = "Sport" value = "Basketball" id="basketball"><br/>
+
+                <label for ="volleyball">  Volleyball </label>
+                <input type= "checkbox" name = "Sport" value = "Volleyball" id="volleyball"><br/>
+                
+                <label for ="tennis">  Tennis </label>
+                <input type= "checkbox" name = "Sport" value = "Tennis" id="tennis"><br/>
+                
+                <label for = "rugby">  Rugby </label>
+                <input type= "checkbox" name = "Sport" value = "Rugby" id="rugby"><br/>
+
+                <label for="boxing">  boxing </label>
+                <input type= "checkbox" name = "Sport" value = "Boxing" id="boxing"><br/>
+            </div>
+
+                <br/>
+                
+
+            <div class = "main-form"> 
+                <h3><label for="continent">Continent: </label>
+                <select name ="continent"id="continent">
+                    <option>North America</option>
+                    <option>South America</option>
+                    <option>Africa</option>
+                    <option>Asia</option>
+                    <option>Europe</option>
+                    <option>Antartica</option>
+                    <option>Australia</option>                                      
+                </select>
+                </h3>
+            </div>
+
+            <div class = "main-form">
+                <h3>Like/Prefer </h3>
+                <label for ="wizkid">  Wizkid </label>
+                <input type= "radio" name = "naija" value = "Wizkid" id = "wizkid"> 
+                
+                <label for ="davido">  Davido </label>
+                <input type= "radio" name = "naija" value = "Davido" id = "davido" ><br/>
+                <br/>
+                <label for ="ronaldo"> Ronaldo </label>
+                <input type= "radio" name = "Goat" value = "Ronaldo" id = "ronaldo"> 
+                
+                <label for ="messi">  Messi </label>
+                <input type= "radio" name = "Goat" value = "Messi" id = "messi" ><br/>
+                <br/>
+                <label for ="hazard">  Hazard </label>
+                <input type= "radio" name = "skill" value = "Hazard" id = "hazard"> 
+                
+                <label for ="neymar"> Neymar </label>
+                <input type= "radio" name = "skill" value = "Neymar" id = "neymar" ><br/>
+                <br/>
+                <label for ="barca"> Barca </label>
+                <input type= "radio" name = "club" value = "Barca" id = "barca"> 
+                
+                <label for ="madrid"> Madrid </label>
+                <input type= "radio" name = "club" value = "Madrid" id = "madrid" ><br/>
+                <br/>
+                <label for ="manutd">  Manutd </label>
+                <input type= "radio" name = "club1" value = "Manutd" id = "manutd"> 
+                
+                <label for ="chelsea"> Chelsea </label>
+                <input type= "radio" name = "club1" value = "Chelsea" id = "chelsea" ><br/>
+                <br/>
+                <label for ="abacha"> Abacha </label>
+                <input type= "radio" name = "patron" value = "Abacha" id = "abacha"> 
+                
+                <label for ="escobar"> Escobar </label>
+                <input type= "radio" name = "patron" value = "Escobar" id = "escobar" ><br/>
+                <br/>
+                <label for ="js">  Js </label>
+                <input type= "radio" name = "code" value = "Js" id = "js"> 
+                
+                <label for ="python"> Python </label>
+                <input type= "radio" name = "code" value = "Python" id = "python" ><br/>
+                <br/>
+                <label for ="pdp">  PDP </label>
+                <input type= "radio" name = "clowns" value = "PDP" id = "pdp"> 
+                
+                <label for ="apc">  APC </label>
+                <input type= "radio" name = "clowns" value = "APC" id = "apc" ><br/>
+                <br/>
+                <label for ="bbnaija">  BBNAIJA </label>
+                <input type= "radio" name = "fun" value = "BBNAIJA" id = "bbnaija"> 
+                
+                <label for ="supersport"> SUPERSPORT </label>
+                <input type= "radio" name = "fun" value = "SUPERSPORT" id = "supersport" ><br/>
+
+            </div>
+
+            <div class = "main-form">
+                <h3><label for="essay">Comment </label>
+                <br/>
+                <textarea name = "Essay" id ="essay" rows ="10" cols = "30" placeholder = "Message"></textarea><br/>
+                </h3>
+            </div>
+        
+            <div class = "main-form">
+                <button class = "btn">cancel</button>        </br>         <button class ="btn">send</button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
