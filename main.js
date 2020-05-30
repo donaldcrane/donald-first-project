@@ -45,30 +45,3 @@ function Validation(){
 	
 }
 
-/*const init = function (){
-	document.getElementById('button-cancel').addEventListener('click', reset)
-	document.getElementById('button-send').addEventListener('click', send)
-
-}
-
-const reset = function(ev){
-	ev.preventDefault();
-	document.getElementById('form').reset();
-}
-const send = function(ev){
-	ev.preventDefault();
-	
-	
-
-	if (Validation){
-		document.getElementById('form').submit();
-
-	}else{
-
-	}
-
-
-}
-
-document.addEventListener('DOMContentLoaded', init)
-*/
